@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 848968428}
   m_Layer: 0
   m_Name: white_piece
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,6 +347,8 @@ GameObject:
   - component: {fileID: 1233041504}
   - component: {fileID: 1233041503}
   - component: {fileID: 1233041502}
+  - component: {fileID: 1233041507}
+  - component: {fileID: 1233041506}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -430,6 +432,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1233041506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233041501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 71dd6c2696194f344bc9778cd322db28, type: 2}
+--- !u!114 &1233041507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233041501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[{"name":"PlayerPiece","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EnemyPiece","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 848968424}
+    - {fileID: 1694704107}
 --- !u!1 &1694704107
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +478,7 @@ GameObject:
   - component: {fileID: 1694704108}
   m_Layer: 0
   m_Name: black_piece
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
